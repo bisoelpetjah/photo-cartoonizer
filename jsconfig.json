@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "commonJS",
+    "target": "es6",
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "paths": {
+      "app/*": ["./src/app/*"],
+      "client/*": ["./src/client/*"],
+      "server/*": ["./src/server/*"]
+    }
+  },
+  "exclude": ["node_modules"]
+}

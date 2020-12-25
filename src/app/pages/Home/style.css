@@ -1,0 +1,38 @@
+.headerContainer {
+  display: flex;
+  padding: 8px;
+
+  & h2 {
+    flex: 1;
+    margin: 0;
+  }
+
+  & .inputContainer {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+
+.imagesContainer {
+  display: flex;
+  flex: 1;
+  margin-top: 8px;
+  padding: 8px;
+
+  & .imageContainer {
+    flex: 1;
+
+    & h4 {
+      margin: 0;
+    }
+
+    & img {
+      height: 90%;
+      margin: 1% 0;
+      object-fit: contain;
+      width: 100%;
+    }
+  }
+}

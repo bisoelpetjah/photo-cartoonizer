@@ -1,0 +1,46 @@
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"],
+  "plugins": [
+    [
+      "babel-plugin-module-resolver",
+      {
+        "alias": {
+          "app": "./src/app",
+          "client": "./src/client",
+          "server": "./src/server"
+        }
+      }
+    ],
+    "@babel/plugin-syntax-dynamic-import",
+    "@loadable/babel-plugin",
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "regenerator": true
+      }
+    ],
+    [
+      "@babel/plugin-proposal-decorators",
+      {
+        "legacy": true
+      }
+    ],
+    [
+      "@babel/plugin-proposal-class-properties",
+      {
+        "loose": true
+      }
+    ]
+  ],"env": {
+    "server": {
+      "plugins": [
+        [
+          "babel-plugin-css-modules-transform",
+          {
+            "generateScopedName": "[local]-[hash:8]"
+          }
+        ],
+      ]
+    }
+  }
+}

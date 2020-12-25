@@ -1,0 +1,16 @@
+$ const { assets, content } = input
+
+<html>
+  <head>
+    <title>Photo Cartoonizer</title>
+
+    $!{assets.linkTags}
+
+    $!{assets.styleTags}
+  </head>
+  <body>
+    <div id="app">$!{content}</div>
+
+    $!{assets.scriptTags}
+  </body>
+</html>
